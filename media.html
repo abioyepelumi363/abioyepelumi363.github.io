@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Media Elements Showcase</title>
+  </head>
+  <body>
+    <header>
+      <h1>Meet AbdulLateef Oluwapelumi Abioye: A Student At AltSchool Africa</h1>
+      <p>Exploring the capabilities of HTML media elements to tell my story</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Who I Am</h2>
+        <picture>
+          <!-- Different image sources for different screen sizes -->
+          <source
+            media="(max-width: 480px)"
+            src="assets/images/abioye.jpg"
+            alt="An image of myself on mobile devices"
+          />
+          <source
+            media="(max-width: 768px)"
+            src="assets/images/abioye.jpg"
+            alt="An image of myself on tablets"
+          />
+          <source
+            media="(min-width: 1024px)"
+            src="assets/images/abioye.jpg"  
+            alt="An image of myself on desktops"
+          />
+          <!-- Fallback image -->
+          <img
+            src="assets/images/abioye.jpg"
+            alt="Abdul_lateef a student at AltSchool Africa"
+            width="465"
+            height="572"
+          />
+        </picture>
+
+        <p>
+          I'm ABdulLateef Abioye, a Cloud Engineering student at AltSchool
+          Africa—driven.
+        </p>
+      </section>
+
+      <section>
+        <h2>Listen to My Introduction</h2>
+        <audio controls>
+            <source src="assets/audio.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+
+        <p>
+          <em
+            >Note: This is where an audio introduction </em
+          >
+        </p>
+      </section>
+
+      <section>
+        <h2>Some random videos</h2>
+        <video
+          controls
+          width="640"
+          height="360"
+          poster="assets/images/Abdul-lateef Abioye_Arc.png" 
+        >
+          <source src="assets/video/joys.mp4" type="video/mp4" />
+          <source src="assets/video/happy.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+      </section>
+
+      <section>
+        <h2>My Skills and Capabilities</h2>
+        <figure>
+          <img
+            src="assets/images/abioye.jpg"
+            alt="Abioye capabilities visualization"
+            width="600"
+            height="400"
+          />
+          <figcaption>
+            Random pictures 
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>More Images </h2>
+        <picture>
+          <!-- More responsive images with different dimensions and crops -->
+          <source
+            media="(max-width: 480px)"
+            src="assets/images/woman.jpg"
+            alt="Abioye  Gallery - mobile view"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="assets/images/student.jpg.jpg"
+            alt="Ibraheem Gallery - tablet view"
+          />
+          <source
+            media="(min-width: 769px)"
+            src="assets/images/abioye,jpg.jpg"
+            alt="Abioye Gallery - desktop view"
+          />
+          <img
+            src="assets/images/Abdul-lateef Abioye_Arc.png" 
+            alt="Let's collaborate"
+            width="640"
+            height="400"
+          />
+        </picture>
+
+        <p>
+          I write code, conduct research, solve problems, and continuously
+          explore new challenges!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created using pure HTML media elements as innstructed in the description</p>
+      <p>© 2025 All rights reserved</p>
+      <p>
+        <a target="_blank" href="index.html"
+          >Return to AltSchool Africa Courses</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
